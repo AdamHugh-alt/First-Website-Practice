@@ -1,3 +1,8 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
 body { 
     font-family: sans-serif;
     
@@ -5,6 +10,7 @@ body {
 
 ul {
     list-style: none;
+    gap: 20px;
 }
 
 a{
@@ -15,19 +21,24 @@ a{
 
 .Header {
     background-color: #1F2937;
+
 }
 
-.Header-left {
+.header-left {
     display: flex;
     margin: auto;
-    padding: 0;
+    padding: 15px;
+    color: #f9faf8;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 .header-right {
     display: flex;
    justify-content: flex-end;
     margin: auto;
-    padding: 0;
+    padding-right: 0;
+    align-items: flex-end;
 }
 
 .topbar{
@@ -36,6 +47,12 @@ a{
 }
 
 img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border: 3px solid black;
+    border-color: #3882f6;
     
 }
 
@@ -71,7 +88,8 @@ img {
 
 .body{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
     
     
 }
@@ -83,9 +101,93 @@ img {
     display: flex;
     justify-content: center;
     padding: 50px;
+    flex-shrink: 0;
 }
 
-.imagegroup1{
+.imagegroup{
+    max-width: 200px;
+    gap: 80px;
+}
+
+.imagecopy1{
+   padding-top: 10px;
+   text-align: center;
+}
+
+.quotebanner{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    padding: 100px;
+    background-color: #E5E7EB;
+    margin-top: 80px;
+}
+
+.quote{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    max-width: 850px;
+}
+
+.author{
+    display: flex;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-right: 150px;
+}
+
+.Mountains{
+    display: flex;
+    border-radius: 0px;
+    align-self: center;
+    border: none;
+}
+
+.almost-footer{
+    background-color: #3882f6;
+    display: flex;
+    justify-content: center;
+    margin: 150px 250px; 
+    border-radius: 10px;
+    padding: 30px;
+    gap: 50px;
+}
+
+
+.af-title{
+    font-size: large;
+    color: #f9faf8;
+}
+
+.af-body{
+    color: #f9faf8;
+    font-weight: lighter;
+    padding-top: 2px;
+}
+
+.endsign{
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: 2px solid black;
+    border-color: #f9faf8;
+    display: flex;
+    align-items: center;
+    padding: 2px 20px 2px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.footer{
+    background-color: #1F2937;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    color: #f9faf8;
+    padding: 40px;
+
 }
